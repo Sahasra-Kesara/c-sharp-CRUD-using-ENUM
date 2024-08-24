@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="Views\Categories\Add.cshtml" />
+    <Content Remove="Views\Categories\_Category.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\lib\bootstrap\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\Categories\Add.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Views\Categories\Add.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Categories\_Category.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Views\Categories\Add.cshtml" />
+    <None Include="Views\Categories\_Category.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\Categories\_Category.cshtml" />
+  </ItemGroup>
+
+</Project>
